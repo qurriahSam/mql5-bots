@@ -137,7 +137,7 @@ void OnTick()
       
       // --------------------------------------------------------- //
       
-      if(    ) // Rule to exit long trades
+      if(   longSma1 > shortSma1 && shortSma2 >= longSma2   ) // Rule to exit long trades
          
       // --------------------------------------------------------- //
          
@@ -165,7 +165,7 @@ void OnTick()
       
       // --------------------------------------------------------- //
       
-      if(    ) // Rule to exit short trades
+      if(   shortSma1 > longSma1 && longSma2 >= shortSma2  ) // Rule to exit short trades
          
       // --------------------------------------------------------- //  
        
@@ -207,7 +207,7 @@ void OnTick()
       
       // --------------------------------------------------------- //
       
-      if(    ) // Rule to enter long trades
+      if(  shortSma1 > longSma1 && longSma2 >= shortSma2  ) // Rule to enter long trades
       
       // --------------------------------------------------------- //
      
@@ -243,7 +243,7 @@ void OnTick()
       
       // --------------------------------------------------------- //
       
-      if(    ) // Rule to enter short trades
+      if(  longSma1 > shortSma1 && shortSma2 >= longSma2  ) // Rule to enter short trades
       
       // --------------------------------------------------------- //
 
